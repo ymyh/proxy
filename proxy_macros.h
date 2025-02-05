@@ -1,4 +1,3 @@
-namespace proxy {
 #ifdef NDEBUG
 #define ___PRO_DEBUG(...)
 #else
@@ -133,4 +132,3 @@ ___PRO_DEBUG( \
       decltype(auto) operator()(::std::nullptr_t, __Args&&... __args) const \
           ___PRO_DIRECT_FUNC_IMPL(__FUNC(::std::forward<__Args>(__args)...)) \
     }
-}

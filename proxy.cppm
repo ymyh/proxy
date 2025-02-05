@@ -4,7 +4,7 @@ module;
 #include <limits.h>
 #include <stddef.h>
 
-export module proxy;
+export module microsoft.proxy;
 import std;
 
 #define MICROSOFT_PROXY_USE_MODULE
