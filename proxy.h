@@ -4,6 +4,7 @@
 #ifndef _MSFT_PROXY_
 #define _MSFT_PROXY_
 
+#ifndef MICROSOFT_PROXY_USE_MODULE
 #include <cassert>
 #include <cstddef>
 #include <cstdlib>
@@ -16,14 +17,19 @@
 #include <tuple>
 #include <type_traits>
 #include <utility>
+#endif // MICROSOFT_PROXY_USE_MODULE
 
 #if __STDC_HOSTED__
+#ifndef MICROSOFT_PROXY_USE_MODULE
 #include <format>
+#endif // MICROSOFT_PROXY_USE_MODULE
 #endif  // __STDC_HOSTED__
 
 #ifdef __cpp_rtti
+#ifndef MICROSOFT_PROXY_USE_MODULE
 #include <optional>
 #include <typeinfo>
+#endif // MICROSOFT_PROXY_USE_MODULE
 #endif  // __cpp_rtti
 
 #if __has_cpp_attribute(msvc::no_unique_address)

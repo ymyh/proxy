@@ -1,3 +1,8 @@
+# ⚠️Differences between upstream
+ - Add proxy.cppm to compile as module.
+ - Export macros to proxy_macros.h
+ - The macro MICROSOFT_PROXY_USE_MODULE controls whether standard headers are included.
+
 # Proxy: Next Generation Polymorphism in C++
 
 [![Proxy-CI](https://github.com/microsoft/proxy/actions/workflows/pipeline-ci.yml/badge.svg)](https://github.com/microsoft/proxy/actions/workflows/pipeline-ci.yml)
