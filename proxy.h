@@ -33,8 +33,10 @@
 #endif // MICROSOFT_PROXY_USE_MODULE
 #endif  // __cpp_rtti
 #if __cpp_rtti >= 199711L
+#ifndef MICROSOFT_PROXY_USE_MODULE
 #include <optional>
 #include <typeinfo>
+#endif // MICROSOFT_PROXY_USE_MODULE
 #endif  // __cpp_rtti >= 199711L
 
 #if __has_cpp_attribute(msvc::no_unique_address)
